@@ -1,0 +1,169 @@
+<!Doctype>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Code | Sign In</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        body{
+            background: whitesmoke;
+            text-align: center;
+        }
+        /*.heading{
+            color:#1c2e2c;
+            margin: 40px 0 10px 0;
+            font-size: 45px;
+            font-weight: 800;
+        }*/
+        .small-heading{
+            color:#1c2e2c;
+            margin: 10px 0 10px 0;
+            font-weight: 600;
+            font-size: 30px;
+        }
+        .slogan{
+            color:#1c2e2c;
+            font-size: 20px;
+            font-weight: 300;
+            margin:-5px 0 40px 0;
+        }
+        form{
+            border-radius: 5px;
+            width: 35%;
+            margin: auto;
+            background: white;
+            color:#1c2e2c;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .login-logo{
+            background: black;
+            color: whitesmoke;
+            padding: 10px;
+            font-size: 30px;
+            font-weight: 300;
+            margin-bottom: 40px;
+        }
+        .input>input{
+            width: 70%;
+            padding: 15px;
+            margin: 6px;
+            font-family:sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            border: none;
+            box-shadow: inset -4px 0 8px 0 rgba(0, 0, 0, 0.15);
+            background: ghostwhite;
+        }
+        .user-logo{
+            position: absolute;
+            left: 540px;
+            top: 330px;
+        }
+        .pass-logo{
+            position: absolute;
+            left: 540px;
+            top: 400px;
+        }
+        @media only screen and (max-width: 1344px) {
+            .user-logo {
+                left: 480px;
+            }
+            .pass-logo{
+                left: 480px;
+            }
+        }
+        @media only screen and (max-width: 344px) {
+            .user-logo {
+                display: none;
+            }
+            .pass-logo{
+                display: none;
+            }
+            .input>input{
+                width: 100%;
+            }
+            form{
+                width: 100%;
+            }
+            .devider{
+                display: none;
+            }
+        }
+        .forgot{
+            color: black;
+            margin: 10px 0 10px 195px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .btn{
+            margin: 20px;
+        }
+        ul>li{
+            list-style-type: none;
+            display: inline-flex;
+            margin: 0 30px 20px 30px;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="main">
+    <div class="heading">
+        <img style="width: 300px;margin-top: 50px" src="image\logo2.png">
+    </div>
+    <div class="small-heading">
+        For Students
+    </div>
+    <div class="slogan">
+        Practice Coding and Learning.
+    </div>
+    <div class="login-body">
+        <form method="post">
+            <div class="login-logo">Login</div>
+
+
+            <div class="input">
+                <input type="email" name="email" value="" placeholder="Your Email">
+                <img class="user-logo" src="https://img.icons8.com/windows/30/000000/user.png"/>
+                <br/>
+                <input type="password" name="password" value="" placeholder="Your Password">
+                <img class="pass-logo" src="https://img.icons8.com/windows/30/000000/lock.png"/>
+            </div>
+
+            <div class="forgot" onclick="#">
+                Forgot your password?
+            </div>
+
+            <button type="submit" style="padding: 10px 15px 10px 15px;font-size: 18px;
+            background: black;margin-left: 315px;color: whitesmoke;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px
+            20px 0 rgba(0, 0, 0, 0.19);font-weight: 600"class="btn btn-success;">
+                Log In</button>
+
+            <div class="devider" style="float:left; width: 35%; margin: 0 0 0 60px;"><hr/></div>
+            <div class="devider"style="float:right; width: 35%;margin: 0 60px 0 0px"><hr/></div>
+            <p class="devider"style="margin: 10px">or</p>
+            <ul>
+                <li><img src="https://img.icons8.com/nolan/64/google-plus.png"/>
+                    <a href="#"></a></li>
+                <li><img src="https://img.icons8.com/nolan/64/facebook.png"/>
+                    <a href="#"></a></li>
+                <li><img src="https://img.icons8.com/nolan/64/github.png"/>
+                    <a href="#"></a></li>
+            </ul>
+        </form>
+    </div>
+</div>
+
+</body>
+
+
+</html>
